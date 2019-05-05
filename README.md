@@ -7,3 +7,4 @@
  * **0.0.3**: 
    * Created Multi-Module Structure
    * Added Maven Release Plugin
+   * Added Initial Service Interfaces
