@@ -8,3 +8,4 @@
    * Created Multi-Module Structure
    * Added Maven Release Plugin
    * Added Initial Service Interfaces
+   * Create Base Entity Model

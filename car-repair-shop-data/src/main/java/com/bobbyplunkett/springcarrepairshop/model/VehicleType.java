@@ -7,7 +7,7 @@ package com.bobbyplunkett.springcarrepairshop.model;
  * @version 0.0.1
  * @since 5/4/2019
  */
-public class VehicleType {
+public class VehicleType extends BaseEntity {
 
     private String type;
 

@@ -7,7 +7,7 @@ package com.bobbyplunkett.springcarrepairshop.model;
  * @version 0.0.1
  * @since 5/4/2019
  */
-public class Vehicle {
+public class Vehicle extends BaseEntity {
 
     private VehicleType vehicleType;
     private Owner owner;

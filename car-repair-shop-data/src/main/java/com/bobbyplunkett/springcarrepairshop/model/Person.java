@@ -8,7 +8,7 @@ package com.bobbyplunkett.springcarrepairshop.model;
  * @version 0.0.1
  * @since 5/4/2019
  */
-public class Person {
+public class Person extends BaseEntity {
     private String firstName;
     private String lastName;
 
