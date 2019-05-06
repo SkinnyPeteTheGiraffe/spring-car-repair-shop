@@ -2,8 +2,6 @@ package com.bobbyplunkett.springcarrepairshop.services;
 
 import com.bobbyplunkett.springcarrepairshop.model.Mechanic;
 
-import java.util.Set;
-
 /**
  * com.bobbyplunkett.springcarrepairshop.services
  *
@@ -11,11 +9,6 @@ import java.util.Set;
  * @version 0.0.1
  * @since 5/5/2019
  */
-public interface MechanicService {
+public interface MechanicService extends CrudService<Mechanic, Long> {
 
-    Mechanic findById(Long id);
-
-    Mechanic save(Mechanic mechanic);
-
-    Set<Mechanic> findAll();
 }

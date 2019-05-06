@@ -1,6 +1,6 @@
 package com.bobbyplunkett.springcarrepairshop.services;
 
-import com.bobbyplunkett.springcarrepairshop.model.Owner;
+import java.util.Set;
 
 /**
  * com.bobbyplunkett.springcarrepairshop.services
@@ -9,8 +9,15 @@ import com.bobbyplunkett.springcarrepairshop.model.Owner;
  * @version 0.0.1
  * @since 5/5/2019
  */
-public interface OwnerService extends CrudService<Owner, Long> {
+public interface CrudService<T, ID> {
 
-    Owner findByLastName(String lastName);
+    Set<T> findAll();
 
+    T findById(ID id);
+
+    T save(T object);
+
+    void delete(T object);
+
+    void deleteById(ID id);
 }
