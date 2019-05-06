@@ -52,9 +52,9 @@ public class DataInitializer implements CommandLineRunner {
         oMike.setLastName("Thompson");
 
         //Carol
-        oMike.setId(1L);
-        oMike.setFirstName("Carol");
-        oMike.setLastName("Williams");
+        oCarol.setId(2L);
+        oCarol.setFirstName("Carol");
+        oCarol.setLastName("Williams");
 
         //Save Owners
         ownerService.save(oMike);
@@ -72,9 +72,9 @@ public class DataInitializer implements CommandLineRunner {
         oBilly.setLastName("Tucker");
 
         //Carol
-        oBilly.setId(1L);
-        oBilly.setFirstName("Bobby");
-        oBilly.setLastName("Tucker");
+        oTucker.setId(2L);
+        oTucker.setFirstName("Bobby");
+        oTucker.setLastName("Tucker");
 
         //Save Owners
         mechanicService.save(oBilly);
