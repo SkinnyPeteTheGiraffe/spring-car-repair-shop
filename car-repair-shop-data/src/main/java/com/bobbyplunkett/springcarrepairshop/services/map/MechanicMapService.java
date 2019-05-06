@@ -1,7 +1,7 @@
 package com.bobbyplunkett.springcarrepairshop.services.map;
 
 import com.bobbyplunkett.springcarrepairshop.model.Mechanic;
-import com.bobbyplunkett.springcarrepairshop.services.CrudService;
+import com.bobbyplunkett.springcarrepairshop.services.MechanicService;
 
 import java.util.Set;
 
@@ -12,7 +12,7 @@ import java.util.Set;
  * @version 0.0.1
  * @since 5/5/2019
  */
-public class MechanicMapService extends AbstractMapService<Mechanic, Long> implements CrudService<Mechanic, Long> {
+public class MechanicMapService extends AbstractMapService<Mechanic, Long> implements MechanicService {
 
     @Override
     public Set<Mechanic> findAll() {

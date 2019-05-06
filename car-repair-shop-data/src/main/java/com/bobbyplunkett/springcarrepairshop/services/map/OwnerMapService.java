@@ -1,7 +1,7 @@
 package com.bobbyplunkett.springcarrepairshop.services.map;
 
 import com.bobbyplunkett.springcarrepairshop.model.Owner;
-import com.bobbyplunkett.springcarrepairshop.services.CrudService;
+import com.bobbyplunkett.springcarrepairshop.services.OwnerService;
 
 import java.util.Set;
 
@@ -12,7 +12,7 @@ import java.util.Set;
  * @version 0.0.1
  * @since 5/5/2019
  */
-public class OwnerMapService extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -37,5 +37,10 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
