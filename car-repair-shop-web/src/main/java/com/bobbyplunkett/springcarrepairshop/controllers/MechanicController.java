@@ -1,6 +1,8 @@
 package com.bobbyplunkett.springcarrepairshop.controllers;
 
+import com.bobbyplunkett.springcarrepairshop.services.MechanicService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -14,8 +16,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MechanicController {
 
+    private final MechanicService mechanicService;
+
+    public MechanicController(MechanicService mechanicService) {
+        this.mechanicService = mechanicService;
+    }
+
     @RequestMapping({"", "/", "/index", "/index.html"})
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("mechanics", mechanicService.findAll());
         return "mechanics/index";
     }
 }
