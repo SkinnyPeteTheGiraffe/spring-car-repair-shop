@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @version 0.0.1
  * @since 5/5/2019
  */
-@RequestMapping("/mechanics")
+@RequestMapping("/owners")
 @Controller
-public class MechanicController {
+public class OwnersController {
 
     @RequestMapping({"", "/", "/index", "/index.html"})
     public String index() {
-        return "mechanics/index";
+        return "owners/index";
     }
 }
