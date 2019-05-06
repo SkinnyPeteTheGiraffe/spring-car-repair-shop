@@ -22,9 +22,9 @@ public class DataInitializer implements CommandLineRunner {
     private final OwnerService ownerService;
     private final MechanicService mechanicService;
 
-    public DataInitializer() {
-        this.ownerService = new OwnerMapService();
-        this.mechanicService = new MechanicMapService();
+    public DataInitializer(OwnerService ownerService, MechanicService mechanicService) {
+        this.ownerService = ownerService;
+        this.mechanicService = mechanicService;
     }
 
     @Override
