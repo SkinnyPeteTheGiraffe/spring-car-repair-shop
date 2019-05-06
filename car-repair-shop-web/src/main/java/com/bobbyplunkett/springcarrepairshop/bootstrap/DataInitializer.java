@@ -47,12 +47,10 @@ public class DataInitializer implements CommandLineRunner {
         Owner oCarol = new Owner();
 
         //Mike
-        oMike.setId(1L);
         oMike.setFirstName("Mike");
         oMike.setLastName("Thompson");
 
         //Carol
-        oCarol.setId(2L);
         oCarol.setFirstName("Carol");
         oCarol.setLastName("Williams");
 
@@ -67,12 +65,10 @@ public class DataInitializer implements CommandLineRunner {
         Mechanic oTucker = new Mechanic();
 
         //Mike
-        oBilly.setId(1L);
         oBilly.setFirstName("Billy");
         oBilly.setLastName("Tucker");
 
         //Carol
-        oTucker.setId(2L);
         oTucker.setFirstName("Bobby");
         oTucker.setLastName("Tucker");
 
