@@ -1,0 +1,6 @@
+<groups xmlns="http://www.isdc.ro/wro">
+  <group name="repairshop">
+    <css>classpath:META-INF/resources/webjars/bootstrap/4.3.1/scss/bootstrap.scss</css>
+    <css>/repairshop.scss</css>
+   </group>
+</groups>
